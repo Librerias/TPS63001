@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS63001 U?
+U 1 1 5D2EF452
+P 4950 2200
+F 0 "U?" H 4950 2867 50  0000 C CNN
+F 1 "TPS63001" H 4950 2776 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 5800 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 4650 2750 50  0001 C CNN
+	1    4950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D2F0B25
+P 4000 2200
+F 0 "R1" H 4070 2246 50  0000 L CNN
+F 1 "100Ω" H 4070 2155 50  0000 L CNN
+F 2 "" V 3930 2200 50  0001 C CNN
+F 3 "~" H 4000 2200 50  0001 C CNN
+	1    4000 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D2F1AE9
+P 4000 2600
+F 0 "C4" H 4115 2646 50  0000 L CNN
+F 1 "0.1uF" H 4115 2555 50  0000 L CNN
+F 2 "" H 4038 2450 50  0001 C CNN
+F 3 "~" H 4000 2600 50  0001 C CNN
+	1    4000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D2F3962
+P 3500 2200
+F 0 "C1" H 3615 2246 50  0000 L CNN
+F 1 "10uF" H 3615 2155 50  0000 L CNN
+F 2 "" H 3538 2050 50  0001 C CNN
+F 3 "~" H 3500 2200 50  0001 C CNN
+	1    3500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D2F3C27
+P 5650 2200
+F 0 "C2" H 5765 2246 50  0000 L CNN
+F 1 "10uF" H 5765 2155 50  0000 L CNN
+F 2 "" H 5688 2050 50  0001 C CNN
+F 3 "~" H 5650 2200 50  0001 C CNN
+	1    5650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5D2F3CF0
+P 6200 2200
+F 0 "C3" H 6315 2246 50  0000 L CNN
+F 1 "10uF" H 6315 2155 50  0000 L CNN
+F 2 "" H 6238 2050 50  0001 C CNN
+F 3 "~" H 6200 2200 50  0001 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5D2F44A1
+P 5650 2500
+F 0 "#PWR?" H 5650 2250 50  0001 C CNN
+F 1 "Earth" H 5650 2350 50  0001 C CNN
+F 2 "" H 5650 2500 50  0001 C CNN
+F 3 "~" H 5650 2500 50  0001 C CNN
+	1    5650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5D2F4D1C
+P 4000 2850
+F 0 "#PWR?" H 4000 2600 50  0001 C CNN
+F 1 "Earth" H 4000 2700 50  0001 C CNN
+F 2 "" H 4000 2850 50  0001 C CNN
+F 3 "~" H 4000 2850 50  0001 C CNN
+	1    4000 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2000 5450 2000
+Wire Wire Line
+	5650 2000 5650 2050
+Wire Wire Line
+	6200 2050 6200 2000
+Wire Wire Line
+	6200 2000 5650 2000
+Connection ~ 5650 2000
+Wire Wire Line
+	5350 2200 5450 2200
+Wire Wire Line
+	5450 2200 5450 2000
+Connection ~ 5450 2000
+Wire Wire Line
+	5450 2000 5650 2000
+Wire Wire Line
+	5650 2350 5650 2400
+Wire Wire Line
+	6200 2350 6200 2400
+Wire Wire Line
+	6200 2400 5650 2400
+Connection ~ 5650 2400
+Wire Wire Line
+	5650 2400 5650 2500
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5D2FAA3B
+P 4950 1400
+F 0 "L1" H 4950 1615 50  0000 C CNN
+F 1 "2.2uH" H 4950 1524 50  0000 C CNN
+F 2 "" H 4950 1400 50  0001 C CNN
+F 3 "~" H 4950 1400 50  0001 C CNN
+	1    4950 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1800 5350 1400
+Wire Wire Line
+	5350 1400 5200 1400
+Wire Wire Line
+	4550 1800 4550 1400
+Wire Wire Line
+	4550 1400 4700 1400
+Wire Wire Line
+	4550 2000 4000 2000
+Wire Wire Line
+	4000 2000 4000 2050
+Wire Wire Line
+	3500 2050 3500 2000
+Wire Wire Line
+	3500 2000 4000 2000
+Connection ~ 4000 2000
+Wire Wire Line
+	4550 2100 4350 2100
+Wire Wire Line
+	4350 2100 4350 2200
+Wire Wire Line
+	4350 2350 4000 2350
+Wire Wire Line
+	4000 2450 4000 2350
+Connection ~ 4000 2350
+Wire Wire Line
+	4550 2200 4350 2200
+Connection ~ 4350 2200
+Wire Wire Line
+	4350 2200 4350 2350
+Wire Wire Line
+	4550 2400 4350 2400
+Wire Wire Line
+	4350 2400 4350 2350
+Connection ~ 4350 2350
+Wire Wire Line
+	4000 2850 4000 2750
+Wire Wire Line
+	3500 2350 3500 2850
+Wire Wire Line
+	3500 2850 4000 2850
+Connection ~ 4000 2850
+$EndSCHEMATC
