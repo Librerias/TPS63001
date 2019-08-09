@@ -6,12 +6,12 @@ EESchema-LIBRARY Version 2.4
 DEF TS3A5017PWR U 0 40 Y Y 1 F N
 F0 "U" -222 679 50 H V L BNN
 F1 "TS3A5017PWR" -86 -1027 50 H V L BNN
-F2 "Analog_Switch2:TS3A5017PWR" 0 0 50 H I L BNN
+F2 "Analog_Switch2:TS3A5017PWR" 30 719 50 H I L BNN
 F3 "" 0 0 50 H I L BNN
-F4 "Texas Instruments" 0 0 50 H I L BNN
-F5 "14-Ohm Dual SP4T Analog Switch 3.3-V/2.5-V Analog Multiplexer/Demultiplexer 16-TSSOP -40 to 85" 0 0 50 H I L BNN
-F6 "TS3A5017PWR" 0 0 50 H I L BNN
-F7 "TSSOP-16 Texas Instruments" 0 0 50 H I L BNN "Campo8"
+F4 "Texas Instruments" 30 719 50 H I L BNN
+F5 "14-Ohm Dual SP4T Analog Switch 3.3-V/2.5-V Analog Multiplexer/Demultiplexer 16-TSSOP -40 to 85" 30 719 50 H I L BNN
+F6 "TS3A5017PWR" 30 719 50 H I L BNN
+F7 "TSSOP-16 Texas Instruments" 30 719 50 H I L BNN "Campo8"
 DRAW
 P 2 0 0 16 -500 -900 500 -900 N
 P 2 0 0 16 -500 600 -500 -900 N
