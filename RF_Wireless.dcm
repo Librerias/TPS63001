@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RN2903
+D Low-power long range Lora technology transceiver module.
+K Lora
+F http://ww1.microchip.com/downloads/en/DeviceDoc/RN2903-LoRa-Technology-Transceiver-Module-Data-Sheet-DS50002390G.pdf
+$ENDCMP
+#
+#End Doc Library

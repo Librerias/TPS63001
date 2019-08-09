@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+LIBS:Schematic project-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	8649 2050 8649 4937
+Wire Wire Line
+	7970 2050 8649 2050
+Wire Wire Line
+	7970 1950 8343 1950
+Connection ~ 8343 1950
+Wire Wire Line
+	7970 1850 8343 1850
+Wire Wire Line
+	8343 1950 8343 2150
+Connection ~ 8343 2150
+Wire Wire Line
+	8343 2150 7970 2150
+Wire Wire Line
+	8462 5350 8462 5416
+Wire Wire Line
+	8462 5250 8462 5350
+Connection ~ 8462 5350
+Wire Wire Line
+	8343 5350 8462 5350
+Wire Wire Line
+	8462 5250 8649 5250
+Connection ~ 8462 5250
+Wire Wire Line
+	7970 5250 8462 5250
+Wire Wire Line
+	8649 5250 8649 5237
+Wire Wire Line
+	8343 5350 8343 5228
+Connection ~ 8343 5350
+Wire Wire Line
+	7970 5350 8343 5350
+$Comp
+L MCU_Microchip_SAMD2:ATSAMD21J18A-AU U?
+U 1 1 5D8736CE
+P 7170 3550
+AR Path="/5D8736CE" Ref="U?"  Part="1" 
+AR Path="/5D86D5B2/5D8736CE" Ref="U5"  Part="1" 
+F 0 "U5" H 7171 5517 50  0000 C CNN
+F 1 "ATSAMD21J18A-AU" H 7171 5426 50  0000 C CNN
+F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 7170 3550 50  0001 L BNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf" H 7170 3550 50  0001 L BNN
+F 4 "TQFP-64 Microchip" H 7170 3550 50  0001 L BNN "Campo4"
+F 5 "https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD21J18A-AU/ATSAMD21J18A-AU-ND/4935901?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol" H 7170 3550 50  0001 L BNN "Campo5"
+F 6 "ATSAMD21J18A-AU" H 7170 3550 50  0001 L BNN "Campo6"
+F 7 "Microchip" H 7170 3550 50  0001 L BNN "Campo7"
+F 8 "ATSAMD21J18A-AU-ND" H 7170 3550 50  0001 L BNN "Campo8"
+	1    7170 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4161 3696 4325 3696
+Wire Wire Line
+	4158 3600 4159 3600
+$Comp
+L Device:C C?
+U 1 1 5D8736E1
+P 8649 5087
+AR Path="/5D8736E1" Ref="C?"  Part="1" 
+AR Path="/5D86D5B2/5D8736E1" Ref="C6"  Part="1" 
+F 0 "C6" H 8764 5133 50  0000 L CNN
+F 1 "0.022uF" H 8764 5042 50  0000 L CNN
+F 2 "" H 8687 4937 50  0001 C CNN
+F 3 "~" H 8649 5087 50  0001 C CNN
+	1    8649 5087
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8343 4929 8343 4928
+Connection ~ 8343 4928
+$Comp
+L Device:C C?
+U 1 1 5D8736EA
+P 8343 5078
+AR Path="/5D8736EA" Ref="C?"  Part="1" 
+AR Path="/5D86D5B2/5D8736EA" Ref="C5"  Part="1" 
+F 0 "C5" H 8458 5124 50  0000 L CNN
+F 1 "0.022uF" H 8458 5033 50  0000 L CNN
+F 2 "" H 8381 4928 50  0001 C CNN
+F 3 "~" H 8343 5078 50  0001 C CNN
+	1    8343 5078
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5D8736F0
+P 8462 5416
+AR Path="/5D8736F0" Ref="#PWR?"  Part="1" 
+AR Path="/5D86D5B2/5D8736F0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8462 5166 50  0001 C CNN
+F 1 "Earth" H 8462 5266 50  0001 C CNN
+F 2 "" H 8462 5416 50  0001 C CNN
+F 3 "~" H 8462 5416 50  0001 C CNN
+	1    8462 5416
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2561 4508 2479 4508
+Wire Wire Line
+	2560 3252 2562 3252
+Wire Wire Line
+	2558 3974 2560 3974
+Wire Wire Line
+	2558 2801 2420 2801
+$Comp
+L RF_Wireless:RN2903 U?
+U 1 1 5D8736FD
+P 3406 3756
+AR Path="/5D8736FD" Ref="U?"  Part="1" 
+AR Path="/5D86D5B2/5D8736FD" Ref="U2"  Part="1" 
+F 0 "U2" H 3359 2843 50  0000 C CNN
+F 1 "RN2903" H 3359 2752 50  0000 C CNN
+F 2 "RF_Wireless:RN2903" H 3830 2803 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/RN2903-LoRa-Technology-Transceiver-Module-Data-Sheet-DS50002390G.pdf" H 3329 4477 50  0001 C CNN
+	1    3406 3756
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4160 2827 4231 2827
+Wire Wire Line
+	4159 3959 4325 3959
+Connection ~ 2560 3252
+Wire Wire Line
+	2300 3252 2560 3252
+Connection ~ 2558 3974
+Wire Wire Line
+	2300 3974 2558 3974
+Wire Wire Line
+	4231 2311 4231 2827
+Wire Wire Line
+	3647 2311 4231 2311
+Connection ~ 3647 2311
+Wire Wire Line
+	3647 2487 3647 2311
+Wire Wire Line
+	3556 2311 3647 2311
+Connection ~ 3556 2311
+Wire Wire Line
+	3556 2486 3556 2311
+Wire Wire Line
+	3380 2311 3556 2311
+Connection ~ 3380 2311
+Wire Wire Line
+	3380 2311 3380 2488
+Wire Wire Line
+	3119 2315 3119 2490
+Connection ~ 3119 2315
+Wire Wire Line
+	3119 2311 3119 2315
+Wire Wire Line
+	3208 2311 3380 2311
+Wire Wire Line
+	3119 2311 3208 2311
+Connection ~ 3208 2311
+Wire Wire Line
+	3208 2489 3208 2311
+Wire Wire Line
+	2420 2315 3119 2315
+Wire Wire Line
+	2420 2801 2420 2315
+Connection ~ 2558 2801
+Wire Wire Line
+	2559 2801 2558 2801
+Connection ~ 2300 3974
+Wire Wire Line
+	2300 3974 2300 4508
+Connection ~ 2300 4508
+Wire Wire Line
+	2300 4508 2300 4686
+Connection ~ 2561 4508
+Wire Wire Line
+	2562 4508 2561 4508
+$Comp
+L power:Earth #PWR?
+U 1 1 5D873730
+P 2300 4686
+AR Path="/5D873730" Ref="#PWR?"  Part="1" 
+AR Path="/5D86D5B2/5D873730" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 4436 50  0001 C CNN
+F 1 "Earth" H 2300 4536 50  0001 C CNN
+F 2 "" H 2300 4686 50  0001 C CNN
+F 3 "~" H 2300 4686 50  0001 C CNN
+	1    2300 4686
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1886 2109 1886 5287
+Wire Notes Line
+	1886 5287 4716 5287
+Wire Notes Line
+	4716 5287 4716 1965
+Wire Notes Line
+	4716 1965 1886 1965
+Wire Notes Line
+	1886 1965 1886 2093
+Text Notes 2978 1879 0    50   ~ 0
+LoRaModule\n
+Text Notes 6830 1377 0    50   ~ 0
+Digital Comunications
+Text GLabel 2167 4498 0    50   Input ~ 0
+GND
+Wire Wire Line
+	2167 4498 2299 4498
+Wire Wire Line
+	2299 4498 2299 4504
+Text GLabel 4237 3601 2    50   Input ~ 0
+V2+
+Wire Wire Line
+	4159 3601 4159 3600
+Wire Wire Line
+	2479 4508 2479 4923
+Wire Wire Line
+	2479 4923 4325 4923
+Wire Wire Line
+	4325 3696 4325 3959
+Connection ~ 2479 4508
+Wire Wire Line
+	2479 4508 2300 4508
+Connection ~ 4325 3959
+Wire Wire Line
+	4325 3959 4325 4923
+Wire Wire Line
+	4237 3601 4214 3601
+Connection ~ 4159 3600
+Wire Wire Line
+	2300 2315 2420 2315
+Wire Wire Line
+	2300 2315 2300 3252
+Connection ~ 2300 3252
+Wire Wire Line
+	2300 3252 2300 3974
+Connection ~ 2420 2315
+Wire Wire Line
+	2562 3341 2179 3341
+Wire Wire Line
+	2179 3341 2179 2186
+Wire Wire Line
+	2179 2186 4319 2186
+Wire Wire Line
+	4319 2186 4319 3450
+Wire Wire Line
+	4319 3450 4214 3450
+Wire Wire Line
+	4214 3450 4214 3601
+Connection ~ 4214 3601
+Wire Wire Line
+	4214 3601 4159 3601
+Text GLabel 8637 1853 2    50   Input ~ 0
+V5+
+Text GLabel 8674 5354 2    50   Input ~ 0
+GND
+Wire Wire Line
+	8674 5354 8460 5354
+Wire Wire Line
+	8460 5354 8460 5353
+Wire Wire Line
+	8638 1853 8343 1853
+Wire Wire Line
+	8343 1850 8343 1853
+Connection ~ 8343 1853
+Wire Wire Line
+	8343 1853 8343 1950
+Wire Wire Line
+	7972 2278 7973 2278
+Connection ~ 8343 2278
+Wire Wire Line
+	8343 2278 8343 2150
+Connection ~ 7973 2278
+Wire Wire Line
+	7973 2278 8343 2278
+Wire Wire Line
+	7973 2401 8343 2401
+Wire Wire Line
+	8343 2278 8343 2401
+Connection ~ 8343 2401
+Wire Wire Line
+	8343 2401 8343 4928
+Text GLabel 6185 2665 0    50   Input ~ 0
+SCL
+Text GLabel 6188 2548 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	6370 2550 6189 2550
+Wire Wire Line
+	6189 2550 6189 2548
+Wire Wire Line
+	6189 2548 6188 2548
+Wire Wire Line
+	6370 2650 6185 2650
+Wire Wire Line
+	6185 2650 6185 2665
+Text GLabel 4380 4044 2    50   Input ~ 0
+RX
+Text GLabel 4374 4173 2    50   Input ~ 0
+TX
+Text GLabel 4381 4393 2    50   Input ~ 0
+CTS
+Text GLabel 4380 4524 2    50   Input ~ 0
+RTS
+Wire Wire Line
+	4380 4044 4160 4044
+Wire Wire Line
+	4160 4044 4160 4039
+Wire Wire Line
+	4374 4173 4163 4173
+Wire Wire Line
+	4163 4173 4163 4119
+Wire Wire Line
+	4381 4393 4161 4393
+Wire Wire Line
+	4161 4393 4161 4390
+Wire Wire Line
+	4380 4524 4163 4524
+Wire Wire Line
+	4163 4524 4163 4475
+Text GLabel 6202 3651 0    50   Input ~ 0
+RX
+Text GLabel 6194 3548 0    50   Input ~ 0
+TX
+Text GLabel 6238 3862 0    50   Input ~ 0
+CTS
+Text GLabel 6235 3756 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	6370 3550 6195 3550
+Wire Wire Line
+	6195 3550 6195 3548
+Wire Wire Line
+	6195 3548 6194 3548
+Wire Wire Line
+	6370 3650 6203 3650
+Wire Wire Line
+	6203 3650 6203 3651
+Wire Wire Line
+	6203 3651 6202 3651
+Wire Wire Line
+	6370 3750 6235 3750
+Wire Wire Line
+	6235 3750 6235 3756
+Wire Wire Line
+	6370 3850 6238 3850
+Wire Wire Line
+	6238 3850 6238 3862
+$EndSCHEMATC

@@ -1,4 +1,11 @@
-15976738091798458
+15995520130486992
+Analog_Switch2
+TS3A5017PWR
+
+
+0
+16
+16
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6033,6 +6040,27 @@ tag connect programming header pogo pins
 0
 14
 14
+Connector2
+B4B-EH-A
+
+
+0
+4
+4
+Connector2
+CONUFL001-SMD-T
+
+
+0
+5
+0
+Connector2
+SAM13165
+
+
+0
+10
+10
 Connector_AMASS
 AMASS_MR30PW-FB_1x03_P3.50mm_Horizontal
 Connector XT30 Horizontal PCB Female, https://www.tme.eu/en/Document/5e47640ba39fa492dbd4c0f4c8ae7b93/MR30PW%20SPEC.pdf
@@ -42244,6 +42272,20 @@ SMD SMT ceramic resonator filter filter hand-soldering
 0
 3
 3
+Device2
+36-2462-ND
+
+
+0
+4
+4
+Device2
+36-2477-ND
+
+
+0
+4
+4
 Diode_SMD
 Diode_Bridge_Diotec_ABS
 SMD diode bridge ABS (Diotec), see https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf
@@ -62628,13 +62670,34 @@ Potentiometer vertical Vishay T73YP
 0
 3
 3
+Power Inductor
+SRN3010-220MCT-ND
+
+
+0
+2
+2
 Regulator
 TPS63001
 
 
 0
-10
-10
+18
+11
+Regulator
+TS5A3359-R
+
+
+0
+8
+8
+Regulator
+TS5A3359-S
+
+
+0
+8
+8
 Relay_SMD
 Relay_DPDT_AXICOM_IMSeries_JLeg
 http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Specification+Or+Standard%7F108-98001%7FW5%7Fpdf%7FEnglish%7FENG_SS_108-98001_W5.pdf
@@ -65211,6 +65274,20 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
+RF_Wireless
+RFM95W-915S2-ND
+
+
+0
+30
+0
+RF_Wireless
+RN2903
+
+
+0
+47
+47
 Rotary_Encoder
 RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
 Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
@@ -70944,6 +71021,13 @@ transformer flyback
 0
 10
 10
+USB 2.0 A
+UJ2-AH-1-SMT
+
+
+0
+2
+2
 Valve
 Valve_ECC-83-1
 Valve ECC-83-1 round pins

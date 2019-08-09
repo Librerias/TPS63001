@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SRN3010-220MCT-ND
+D Semi-shield power inductor.
+F https://www.bourns.com/docs/Product-Datasheets/SRN3010.pdf
+$ENDCMP
+#
+#End Doc Library

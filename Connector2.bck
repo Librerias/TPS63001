@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CONUFL001-SMD
+D Micro coaxial surface mount connector.
+F https://media.digikey.com/pdf/Data%20Sheets/Linx%20Technologies%20PDFs/CONUFL001-SMD_T_Dwg_RevB_5-15-17.pdf
+$ENDCMP
+#
+$CMP SAM13165CT-ND
+D CL double vertical SMT terminal strip
+F http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 36-2440-ND
+D Battery holder AA 4 cell Covered
+F https://www.keyelco.com/userAssets/file/M65p28.pdf
+$ENDCMP
+#
+$CMP 36-2462-ND
+D Battery holder (open) AA 2 cell
+F https://www.keyelco.com/userAssets/file/M65p28.pdf
+$ENDCMP
+#
+$CMP 36-2477-ND
+D Battery holder (open) AA 4 cell
+F https://www.keyelco.com/userAssets/file/M65p28.pdf
+$ENDCMP
+#
+#End Doc Library

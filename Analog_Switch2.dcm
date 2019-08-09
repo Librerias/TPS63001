@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TS3A5017PWR
+D Dual single-pole quadruple-throw analog switch.
+K Analog switch
+F http://www.ti.com/lit/ds/symlink/ts3a5017.pdf
+$ENDCMP
+#
+#End Doc Library

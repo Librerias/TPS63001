@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATSAMD21J18A-AU
+D Low-power microcontroller 32-nit from 64-pins.
+F http://ww1.microchip.com/downloads/en/DeviceDoc/SAMD21-Family-DataSheet-DS40001882D.pdf
+$ENDCMP
+#
+#End Doc Library

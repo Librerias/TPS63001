@@ -1,0 +1,417 @@
+EESchema Schematic File Version 4
+LIBS:Schematic project-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS63001 U1
+U 1 1 5D2EF452
+P 2228 1624
+F 0 "U1" H 2228 2291 50  0000 C CNN
+F 1 "TPS63001" H 2228 2200 50  0000 C CNN
+F 2 "Package_SON:Texas_DRC0010J_ThermalVias" H 3078 1074 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63000.pdf" H 1928 2174 50  0001 C CNN
+	1    2228 1624
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D2F0B25
+P 1278 1624
+F 0 "R1" H 1348 1670 50  0000 L CNN
+F 1 "100Ω" H 1348 1579 50  0000 L CNN
+F 2 "" V 1208 1624 50  0001 C CNN
+F 3 "~" H 1278 1624 50  0001 C CNN
+	1    1278 1624
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D2F1AE9
+P 1278 2024
+F 0 "C4" H 1393 2070 50  0000 L CNN
+F 1 "0.1uF" H 1393 1979 50  0000 L CNN
+F 2 "" H 1316 1874 50  0001 C CNN
+F 3 "~" H 1278 2024 50  0001 C CNN
+	1    1278 2024
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D2F3962
+P 778 1624
+F 0 "C1" H 893 1670 50  0000 L CNN
+F 1 "10uF" H 893 1579 50  0000 L CNN
+F 2 "" H 816 1474 50  0001 C CNN
+F 3 "~" H 778 1624 50  0001 C CNN
+	1    778  1624
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D2F3C27
+P 2928 1624
+F 0 "C2" H 3043 1670 50  0000 L CNN
+F 1 "10uF" H 3043 1579 50  0000 L CNN
+F 2 "" H 2966 1474 50  0001 C CNN
+F 3 "~" H 2928 1624 50  0001 C CNN
+	1    2928 1624
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5D2F3CF0
+P 3478 1624
+F 0 "C3" H 3593 1670 50  0000 L CNN
+F 1 "10uF" H 3593 1579 50  0000 L CNN
+F 2 "" H 3516 1474 50  0001 C CNN
+F 3 "~" H 3478 1624 50  0001 C CNN
+	1    3478 1624
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5D2F44A1
+P 2928 1924
+F 0 "#PWR?" H 2928 1674 50  0001 C CNN
+F 1 "Earth" H 2928 1774 50  0001 C CNN
+F 2 "" H 2928 1924 50  0001 C CNN
+F 3 "~" H 2928 1924 50  0001 C CNN
+	1    2928 1924
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5D2F4D1C
+P 1278 2274
+F 0 "#PWR?" H 1278 2024 50  0001 C CNN
+F 1 "Earth" H 1278 2124 50  0001 C CNN
+F 2 "" H 1278 2274 50  0001 C CNN
+F 3 "~" H 1278 2274 50  0001 C CNN
+	1    1278 2274
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2628 1424 2728 1424
+Wire Wire Line
+	2928 1424 2928 1474
+Wire Wire Line
+	3478 1474 3478 1424
+Connection ~ 2928 1424
+Wire Wire Line
+	2628 1624 2728 1624
+Wire Wire Line
+	2728 1624 2728 1424
+Connection ~ 2728 1424
+Wire Wire Line
+	2728 1424 2928 1424
+Wire Wire Line
+	2928 1774 2928 1824
+Wire Wire Line
+	3478 1774 3478 1824
+Wire Wire Line
+	3478 1824 2928 1824
+Connection ~ 2928 1824
+Wire Wire Line
+	2928 1824 2928 1924
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 5D2FAA3B
+P 2228 824
+F 0 "L1" H 2228 1039 50  0000 C CNN
+F 1 "2.2uH" H 2228 948 50  0000 C CNN
+F 2 "" H 2228 824 50  0001 C CNN
+F 3 "~" H 2228 824 50  0001 C CNN
+	1    2228 824 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2628 824  2478 824 
+Wire Wire Line
+	1828 1224 1828 824 
+Wire Wire Line
+	1828 824  1978 824 
+Wire Wire Line
+	1828 1424 1278 1424
+Wire Wire Line
+	1278 1424 1278 1474
+Wire Wire Line
+	778  1474 778  1424
+Wire Wire Line
+	778  1424 1278 1424
+Connection ~ 1278 1424
+Wire Wire Line
+	1828 1524 1628 1524
+Wire Wire Line
+	1628 1524 1628 1624
+Wire Wire Line
+	1628 1774 1278 1774
+Wire Wire Line
+	1278 1874 1278 1774
+Connection ~ 1278 1774
+Wire Wire Line
+	1828 1624 1628 1624
+Connection ~ 1628 1624
+Wire Wire Line
+	1628 1624 1628 1774
+Wire Wire Line
+	1828 1824 1628 1824
+Wire Wire Line
+	1628 1824 1628 1774
+Connection ~ 1628 1774
+Wire Wire Line
+	1278 2274 1278 2174
+Wire Wire Line
+	778  1774 778  2274
+Wire Wire Line
+	778  2274 1278 2274
+Connection ~ 1278 2274
+$Comp
+L power:Earth #PWR?
+U 1 1 5D3004A7
+P 1928 2274
+F 0 "#PWR?" H 1928 2024 50  0001 C CNN
+F 1 "Earth" H 1928 2124 50  0001 C CNN
+F 2 "" H 1928 2274 50  0001 C CNN
+F 3 "~" H 1928 2274 50  0001 C CNN
+	1    1928 2274
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2228 2224 2228 2274
+Wire Wire Line
+	2228 2274 2128 2274
+Wire Wire Line
+	2128 2224 2128 2274
+Connection ~ 2128 2274
+Wire Wire Line
+	2128 2274 1928 2274
+$Comp
+L power:VCC #PWR?
+U 1 1 5D4B368C
+P 678 1224
+F 0 "#PWR?" H 678 1074 50  0001 C CNN
+F 1 "VCC" H 695 1397 50  0000 C CNN
+F 2 "" H 678 1224 50  0001 C CNN
+F 3 "" H 678 1224 50  0001 C CNN
+	1    678  1224
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	678  1224 678  1424
+Wire Wire Line
+	678  1424 778  1424
+Connection ~ 778  1424
+Wire Wire Line
+	2628 1224 2628 824 
+$Comp
+L power:Earth #PWR?
+U 1 1 5D4E5593
+P 4331 2798
+F 0 "#PWR?" H 4331 2548 50  0001 C CNN
+F 1 "Earth" H 4331 2648 50  0001 C CNN
+F 2 "" H 4331 2798 50  0001 C CNN
+F 3 "~" H 4331 2798 50  0001 C CNN
+	1    4331 2798
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF_Wireless:RN2903 U2
+U 1 1 5D4E6F78
+P 5465 1924
+F 0 "U2" H 5418 1011 50  0000 C CNN
+F 1 "RN2903" H 5418 920 50  0000 C CNN
+F 2 "RF_Wireless:RN2903" H 5889 971 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/RN2903-LoRa-Technology-Transceiver-Module-Data-Sheet-DS50002390G.pdf" H 5388 2645 50  0001 C CNN
+	1    5465 1924
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6219 995  6360 995 
+Wire Wire Line
+	6360 995  6360 655 
+Wire Wire Line
+	4331 2798 4331 2676
+Wire Wire Line
+	4331 2676 4620 2676
+Connection ~ 4620 2676
+Wire Wire Line
+	4620 2676 4622 2676
+Wire Wire Line
+	4617 2142 4331 2142
+Wire Wire Line
+	4331 2142 4331 2676
+Wire Wire Line
+	4330 2677 4332 2677
+Connection ~ 4331 2142
+Wire Wire Line
+	4331 2142 4330 2142
+Connection ~ 4331 2676
+Wire Wire Line
+	4331 2676 4331 2677
+Wire Wire Line
+	4619 1420 4330 1420
+Wire Wire Line
+	4330 1420 4330 2142
+$Comp
+L power:Earth #PWR?
+U 1 1 5D4F8E0A
+P 6510 698
+F 0 "#PWR?" H 6510 448 50  0001 C CNN
+F 1 "Earth" H 6510 548 50  0001 C CNN
+F 2 "" H 6510 698 50  0001 C CNN
+F 3 "~" H 6510 698 50  0001 C CNN
+	1    6510 698 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6510 698  6510 655 
+Wire Wire Line
+	5705 655  6360 655 
+Connection ~ 6360 655 
+Wire Wire Line
+	6360 655  6510 655 
+Wire Wire Line
+	5614 654  5614 613 
+Wire Wire Line
+	5614 613  5705 613 
+Wire Wire Line
+	5705 613  5705 655 
+Connection ~ 5705 655 
+Wire Wire Line
+	5266 658  5266 657 
+Wire Wire Line
+	5177 620  5177 658 
+Connection ~ 5266 657 
+Wire Wire Line
+	5266 657  5266 620 
+$Comp
+L power:Earth #PWR?
+U 1 1 5D4FE51A
+P 4462 678
+F 0 "#PWR?" H 4462 428 50  0001 C CNN
+F 1 "Earth" H 4462 528 50  0001 C CNN
+F 2 "" H 4462 678 50  0001 C CNN
+F 3 "~" H 4462 678 50  0001 C CNN
+	1    4462 678 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4462 678  4462 620 
+Wire Wire Line
+	4462 620  4587 620 
+Connection ~ 5177 620 
+Wire Wire Line
+	5177 620  5266 620 
+Wire Wire Line
+	4617 969  4587 969 
+Wire Wire Line
+	4587 969  4587 620 
+Connection ~ 4587 620 
+Wire Wire Line
+	4587 620  5177 620 
+$Comp
+L power:Earth #PWR?
+U 1 1 5D502D1D
+P 6465 2891
+F 0 "#PWR?" H 6465 2641 50  0001 C CNN
+F 1 "Earth" H 6465 2741 50  0001 C CNN
+F 2 "" H 6465 2891 50  0001 C CNN
+F 3 "~" H 6465 2891 50  0001 C CNN
+	1    6465 2891
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6219 2732 6465 2732
+Wire Wire Line
+	6465 2732 6465 2891
+Wire Wire Line
+	6218 2127 6465 2127
+Connection ~ 6465 2732
+Wire Wire Line
+	6219 1864 6220 1864
+Wire Wire Line
+	6465 1864 6465 2127
+Connection ~ 6220 1864
+Wire Wire Line
+	6220 1864 6465 1864
+Connection ~ 6465 2127
+Wire Wire Line
+	6465 2127 6465 2732
+$Comp
+L Analog_Switch2:TS3A5017PWR U3
+U 1 1 5D50713E
+P 3304 3898
+F 0 "U3" H 3304 4668 50  0000 C CNN
+F 1 "TS3A5017PWR" H 3304 4577 50  0000 C CNN
+F 2 "Analog_Switch2:TS3A5017PWR" H 3304 3898 50  0001 L BNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts3a5017.pdf" H 3304 3898 50  0001 L BNN
+F 4 "Texas Instruments" H 3304 3898 50  0001 L BNN "Campo4"
+F 5 "14-Ohm Dual SP4T Analog Switch 3.3-V/2.5-V Analog Multiplexer/Demultiplexer 16-TSSOP -40 to 85" H 3304 3898 50  0001 L BNN "Campo5"
+F 6 "TS3A5017PWR" H 3304 3898 50  0001 L BNN "Campo6"
+F 7 "TSSOP-16 Texas Instruments" H 3304 3898 50  0001 L BNN "Campo8"
+	1    3304 3898
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2604 3498 2604 2365
+Wire Wire Line
+	2604 2365 3935 2365
+Wire Wire Line
+	2928 1424 3478 1424
+Connection ~ 3478 1424
+Wire Wire Line
+	3478 1424 3935 1424
+$Comp
+L Analog_Switch2:TS3A5017PWR U?
+U 1 1 5D50DDC5
+P 3295 5715
+F 0 "U?" H 3295 6485 50  0000 C CNN
+F 1 "TS3A5017PWR" H 3295 6394 50  0000 C CNN
+F 2 "Analog_Switch2:TS3A5017PWR" H 3295 5715 50  0001 L BNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts3a5017.pdf" H 3295 5715 50  0001 L BNN
+F 4 "Texas Instruments" H 3295 5715 50  0001 L BNN "Campo4"
+F 5 "14-Ohm Dual SP4T Analog Switch 3.3-V/2.5-V Analog Multiplexer/Demultiplexer 16-TSSOP -40 to 85" H 3295 5715 50  0001 L BNN "Campo5"
+F 6 "TS3A5017PWR" H 3295 5715 50  0001 L BNN "Campo6"
+F 7 "TSSOP-16 Texas Instruments" H 3295 5715 50  0001 L BNN "Campo8"
+	1    3295 5715
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2595 5315 2446 5315
+Wire Wire Line
+	2446 5315 2446 2365
+Wire Wire Line
+	2446 2365 2604 2365
+Connection ~ 2604 2365
+Wire Wire Line
+	4622 1509 4621 1509
+Connection ~ 3935 1509
+Wire Wire Line
+	3935 1509 3935 2365
+Connection ~ 4621 1509
+Wire Wire Line
+	4621 1509 3935 1509
+Wire Wire Line
+	6218 1768 6464 1768
+Wire Wire Line
+	6464 1768 6464 557 
+Wire Wire Line
+	6464 557  3935 557 
+Wire Wire Line
+	3935 557  3935 1424
+Connection ~ 3935 1424
+Wire Wire Line
+	3935 1424 3935 1509
+$EndSCHEMATC
